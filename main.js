@@ -8,7 +8,7 @@ var $id = function(id){ return document.getElementById(id); };
  * サイコロを振る
  */
 function shake(){
-	var sai = Math.floor(Math.random() * 4) + 1;		// 1から6までの適当な数字
+	var sai = Math.floor(Math.random() * 3) + 1;		// 1から6までの適当な数字
 	sai = sai + ".png";							// 画像ファイル名生成
 	$id("saikoro").innerHTML = "<img src='" + sai + "' width='500' height='500'>";
 }
@@ -17,7 +17,7 @@ function shake(){
  * サイコロを振るときのアニメーション
  */
 function anime(){
-	if(count > 20){	// 適当に20回ほど振る
+	if(count > 30){	// 適当に30回ほど振る
 		count = 0;
 		$id("btn").disabled = "";	// ボタンを使える状態にする
 		return 0;
