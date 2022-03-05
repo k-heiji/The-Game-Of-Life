@@ -9,7 +9,7 @@ var $id = function(id){ return document.getElementById(id); };
  */
 function shake(){
 	var sai = Math.floor(Math.random() * 3) + 1;		// 1から6までの適当な数字
-	sai = sai + ".png";							// 画像ファイル名生成
+	sai = sai + ".JPG";							// 画像ファイル名生成
 	$id("saikoro").innerHTML = "<img src='" + sai + "' width='500' height='500'>";
 }
 
